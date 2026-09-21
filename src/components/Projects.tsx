@@ -85,10 +85,41 @@ const projects = [
     tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
-      <div className="w-full h-full bg-[#EAE8E3] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
-        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center">
-          <img src="/mikasa-new.jpg" alt="Mikasa Project" className="w-full h-full object-contain mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#030303] flex items-center justify-center p-6 md:p-12 overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
+        {/* Terminal / Code Window */}
+        <div className="w-full max-w-2xl h-full border border-zinc-800/80 bg-[#050505] flex flex-col rounded-sm overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-1000 z-10">
+          <div className="h-10 border-b border-zinc-900 flex items-center px-4 justify-between bg-[#0a0a0a]">
+            <div className="flex gap-1.5 opacity-50">
+               <div className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
+               <div className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
+               <div className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
+            </div>
+            <span className="text-[10px] text-zinc-600 font-mono uppercase tracking-widest">mikasa.ts</span>
+            <div className="w-10"></div>
+          </div>
+          <div className="flex-1 p-6 md:p-8 flex">
+            {/* Line numbers */}
+            <div className="flex flex-col text-[11px] md:text-xs text-zinc-800 font-mono pr-4 text-right select-none">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+            </div>
+            {/* Code */}
+            <div className="flex flex-col text-[11px] md:text-xs font-mono text-zinc-400">
+               <span><span className="text-zinc-600">import</span> {"{ "}MikasaCore{" }"} <span className="text-zinc-600">from</span> <span className="text-blue-500/70">'@mikasa/core'</span>;</span>
+               <br/>
+               <span><span className="text-zinc-600">const</span> bot = <span className="text-zinc-600">new</span> MikasaCore({"{"}</span>
+               <span className="pl-4">mode: <span className="text-blue-500/70">'autonomous'</span>,</span>
+               <span className="pl-4">sync: <span className="text-zinc-500">true</span></span>
+               <span>{"});"}</span>
+               <br/>
+               <span>bot.<span className="text-zinc-300">initialize</span>().then(() <span className="text-zinc-600">{`=>`}</span> {"{"}</span>
+               <span className="pl-4">console.<span className="text-zinc-300">log</span>(<span className="text-blue-500/70">'System is running...'</span>);</span>
+               <span>{"});"}</span>
+            </div>
+          </div>
         </div>
+        
+        {/* Subtle Mikasa watermark to preserve the original image essence */}
+        <img src="/mikasa-new.jpg" className="absolute right-0 bottom-0 w-64 h-64 md:w-96 md:h-96 object-contain opacity-[0.02] mix-blend-screen grayscale pointer-events-none" alt="" />
       </div>
     )
   },
@@ -100,9 +131,42 @@ const projects = [
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#111111] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center z-10">
-          <img src="/allana-new.jpg" alt="Allana Bot" className="w-full h-full object-contain rounded-xl opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#030303] flex items-center justify-center p-6 md:p-12 overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        {/* Mobile Phone Mockup / WhatsApp Interface */}
+        <div className="w-[280px] h-[450px] border border-zinc-800/80 bg-[#080808] rounded-[2rem] flex flex-col overflow-hidden relative transform group-hover:scale-[1.02] transition-transform duration-1000 shadow-2xl z-10">
+          {/* Header */}
+          <div className="h-16 border-b border-zinc-900 bg-[#0a0a0a] flex items-center px-5 gap-3 z-10">
+            <div className="w-10 h-10 rounded-full border border-zinc-800 overflow-hidden bg-zinc-900">
+               <img src="/allana-new.jpg" className="w-full h-full object-cover" alt="Allana" />
+            </div>
+            <div className="flex flex-col">
+               <span className="text-sm font-medium text-zinc-200">Allana</span>
+               <span className="text-[10px] text-zinc-500 uppercase tracking-widest">Online</span>
+            </div>
+          </div>
+          
+          {/* Chat Body */}
+          <div className="flex-1 bg-[#050505] p-5 flex flex-col gap-4 relative">
+             <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(circle_at_center,_#fff_1px,_transparent_1px)] bg-[size:16px_16px]" />
+             
+             {/* User Message */}
+             <div className="self-end bg-zinc-800/60 rounded-2xl rounded-tr-sm px-4 py-2.5 max-w-[80%] border border-zinc-700/30">
+               <span className="text-xs text-zinc-300 font-light">Gostaria de uma simulação.</span>
+             </div>
+             
+             {/* Bot Message */}
+             <div className="self-start bg-[#0a0a0a] rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%] border border-zinc-800/80 flex flex-col gap-2">
+               <span className="text-xs text-zinc-300 font-light">Olá! Eu sou a Allana.</span>
+               <span className="text-xs text-zinc-400 font-light leading-relaxed">Vou analisar os dados e preparar a automação para você. Qual é o seu segmento?</span>
+             </div>
+             
+             {/* Typing Indicator */}
+             <div className="self-start bg-[#0a0a0a] rounded-full px-4 py-3 border border-zinc-800/80 flex gap-1 mt-auto items-center h-8">
+               <div className="w-1.5 h-1.5 rounded-full bg-zinc-700 animate-pulse" />
+               <div className="w-1.5 h-1.5 rounded-full bg-zinc-700 animate-pulse delay-75" />
+               <div className="w-1.5 h-1.5 rounded-full bg-zinc-700 animate-pulse delay-150" />
+             </div>
+          </div>
         </div>
       </div>
     )
