@@ -6,24 +6,15 @@ import { GithubIcon } from "./icons/GithubIcon";
 const projects = [
   {
     id: "01",
-    title: "ARQUEIRO",
-    subtitle: "WHATSAPP AUTOMATION & AI",
-    desc: "Sistema de automação para processamento de solicitações via WhatsApp. Arquitetura modular robusta com parser de mensagens, filas, controle de estado, anti-duplicidade (request_id) e tratamento de erros avançado (retries). Integração com Ollama e Groq. Centenas de testes passando.",
-    tech: ["PYTHON", "WHATSAPP API", "OLLAMA", "GROQ", "PYTEST"],
+    title: "CORESYS",
+    subtitle: "CRM PLATFORM",
+    desc: "Sistema completo de CRM desenvolvido para otimizar o relacionamento com o cliente e a gestão de processos internos. Conta com uma arquitetura moderna para alta escalabilidade e segurança de dados.",
+    tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative" data-cursor="EXPLORE">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_#333_1px,_transparent_1px)] bg-[size:24px_24px]" />
-        <div className="font-mono text-xs md:text-sm text-emerald-900 leading-loose w-full max-w-lg z-10">
-          {`[INFO] Starting queue worker...
-[DEBUG] whatsapp.py: receiving payload
-[DEBUG] parser.py: processing message_id=8f9a2
-[INFO] simulator.py: requesting data...
-[WARN] retrying connection... (1/3)
-[INFO] success. generated via Ollama.
-[DEBUG] formatter.py: formatting output...
-[INFO] jobs.py: job completed. duration=1.2s`}
-        </div>
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group" data-cursor="EXPLORE">
+        {/* Placeholder image tag for Coresys photo */}
+        <img src="/coresys.jpg" alt="Coresys CRM" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700 grayscale group-hover:grayscale-0" />
       </div>
     )
   },
@@ -69,10 +60,8 @@ const projects = [
     tech: ["REACT", "TAILWIND CSS", "FRAMER MOTION", "UX/UI"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative" data-cursor="EXPLORE">
-        <div className="w-64 h-96 border border-zinc-800 rounded-full flex items-center justify-center opacity-50">
-           <div className="w-48 h-72 border border-zinc-700 rounded-full" />
-        </div>
+      <div className="w-full h-full bg-[#0a0a0a] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative group" data-cursor="EXPLORE">
+         <img src="/vertice-logo.png" alt="Vértice Logo" className="w-48 h-48 md:w-64 md:h-64 object-contain opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
       </div>
     )
   }
