@@ -12,8 +12,8 @@ const projects = [
     tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        <img src="/coresys-premium.jpg" alt="Coresys CRM" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#E5E3DB] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <img src="/coresys-editorial.jpg" alt="Coresys CRM" className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   },
@@ -25,8 +25,8 @@ const projects = [
     tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
-        <img src="/mikasa-premium.jpg" alt="Mikasa Project" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0" />
+      <div className="w-full h-full bg-[#F5F4F0] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
+        <img src="/mikasa-editorial.jpg" alt="Mikasa Project" className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   },
@@ -38,8 +38,8 @@ const projects = [
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        <img src="/allana-premium.jpg" alt="Allana Bot" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#1A1A1E] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <img src="/allana-editorial.jpg" alt="Allana Bot" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   },
@@ -51,8 +51,8 @@ const projects = [
     tech: ["REACT", "TAILWIND CSS", "FRAMER MOTION", "UX/UI"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-         <img src="/vertice-premium.jpg" alt="Vértice Logo" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#F8F7F3] flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+         <img src="/vertice-editorial.jpg" alt="Vértice Logo" className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   }
