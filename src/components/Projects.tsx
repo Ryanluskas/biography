@@ -12,30 +12,50 @@ const projects = [
     tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group" data-cursor="EXPLORE">
-        {/* Placeholder image tag for Coresys photo */}
-        <img src="/coresys.jpg" alt="Coresys CRM" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700 grayscale group-hover:grayscale-0" />
+      <div className="w-full h-full bg-[#030303] flex flex-col overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        {/* Abstract Dashboard UI */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
+        <div className="absolute top-0 w-full h-12 border-b border-zinc-900 bg-zinc-950/50 backdrop-blur-md flex items-center px-6 gap-2">
+           <div className="w-2 h-2 rounded-full bg-red-500/50" />
+           <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
+           <div className="w-2 h-2 rounded-full bg-green-500/50" />
+        </div>
+        <div className="flex-1 mt-12 p-8 flex flex-col gap-6 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out">
+          <div className="flex gap-4 w-full">
+            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
+               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
+               <div className="w-24 h-4 bg-zinc-700 rounded-full" />
+            </div>
+            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
+               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
+               <div className="w-20 h-4 bg-zinc-700 rounded-full" />
+            </div>
+            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
+               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
+               <div className="w-28 h-4 bg-zinc-700 rounded-full" />
+            </div>
+          </div>
+          <div className="flex-1 w-full bg-zinc-900/30 rounded-lg border border-zinc-800/50 relative overflow-hidden">
+             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-900/20 to-transparent" />
+             <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+               <path d="M0 100 C 20 80, 40 90, 60 50 C 80 10, 90 40, 100 0" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="2" />
+             </svg>
+          </div>
+        </div>
       </div>
     )
   },
   {
     id: "02",
-    title: "CAPITALCRED",
-    subtitle: "FINANCIAL PLATFORM",
-    desc: "Plataforma completa para consultoria financeira. Inclui dashboard gerencial, gestão de clientes, consultores, simulações e cálculo de comissões. Integração com simuladores da Caixa e Santander. Sistema com frontend, backend, banco de dados, autenticação e permissões estruturadas.",
-    tech: ["NEXT.JS", "NODE.JS", "PRISMA", "POSTGRESQL", "SUPABASE", "ZUSTAND"],
-    github: null,
+    title: "MIKASA",
+    subtitle: "OPEN SOURCE",
+    desc: "Projeto open-source focado em simplificar integrações e automações. Desenvolvido para a comunidade, prezando por uma arquitetura moderna, tipagem rigorosa e facilidade de extensão.",
+    tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
+    github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 p-8 flex flex-col gap-6 overflow-hidden relative" data-cursor="EXPLORE">
-        <div className="w-full flex gap-4">
-          <div className="h-24 md:h-32 flex-1 bg-zinc-900/50 border border-zinc-800/50 rounded-sm" />
-          <div className="h-24 md:h-32 flex-1 bg-zinc-900/50 border border-zinc-800/50 rounded-sm" />
-          <div className="h-24 md:h-32 flex-1 bg-zinc-900/50 border border-zinc-800/50 rounded-sm" />
-        </div>
-        <div className="flex-1 flex gap-6">
-           <div className="w-32 md:w-64 h-full bg-zinc-900/30 border border-zinc-800/50 rounded-sm hidden sm:block" />
-           <div className="flex-1 h-full bg-zinc-900/20 border border-zinc-800/50 rounded-sm" />
-        </div>
+      <div className="w-full h-full bg-black border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_#fff_0px,_transparent_1px)] bg-[size:32px_32px] group-hover:scale-110 transition-transform duration-1000" />
+        <h3 className="text-8xl md:text-9xl font-serif italic text-zinc-800 group-hover:text-white transition-colors duration-700 mix-blend-difference z-10 select-none">Mikasa</h3>
       </div>
     )
   },
@@ -47,8 +67,11 @@ const projects = [
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative group" data-cursor="EXPLORE">
-        <img src="/allana.png" alt="Allana Bot" className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105" />
+      <div className="w-full h-full bg-[#080808] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+        <div className="w-full h-full p-12 md:p-24 flex items-center justify-center">
+           <img src="/allana.png" alt="Allana Bot" className="w-full h-full object-contain filter drop-shadow-[0_0_30px_rgba(16,185,129,0.1)] group-hover:drop-shadow-[0_0_50px_rgba(16,185,129,0.2)] group-hover:scale-105 transition-all duration-700" />
+        </div>
       </div>
     )
   },
@@ -60,8 +83,14 @@ const projects = [
     tech: ["REACT", "TAILWIND CSS", "FRAMER MOTION", "UX/UI"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#0a0a0a] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative group" data-cursor="EXPLORE">
-         <img src="/vertice-logo.png" alt="Vértice Logo" className="w-48 h-48 md:w-64 md:h-64 object-contain opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
+      <div className="w-full h-full bg-zinc-950 border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+         {/* Premium Glow Effect */}
+         <div className="absolute w-full h-full flex items-center justify-center">
+            <div className="w-[150%] h-[150%] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(255,255,255,0.1)_360deg)] animate-[spin_10s_linear_infinite] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+         </div>
+         <div className="absolute inset-1 bg-zinc-950/90 backdrop-blur-3xl rounded-sm" />
+         
+         <img src="/vertice-logo.png" alt="Vértice Logo" className="w-48 h-48 md:w-64 md:h-64 object-contain z-10 mix-blend-screen opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
       </div>
     )
   }
