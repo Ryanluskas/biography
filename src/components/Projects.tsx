@@ -41,14 +41,14 @@ const projects = [
   },
   {
     id: "03",
-    title: "MIKASA",
-    subtitle: "OPEN SOURCE",
-    desc: "Projeto open-source focado em simplificar integrações e automações. Desenvolvido para a comunidade, prezando por uma arquitetura moderna, tipagem rigorosa e facilidade de extensão.",
-    tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
-    github: "https://github.com/Ryanluskas/mikasa",
+    title: "ALLANA BOT",
+    subtitle: "WHATSAPP AUTOMATION",
+    desc: "Assistente virtual autônoma desenvolvida para WhatsApp. Realiza atendimento automatizado, qualificação de leads e gestão de simulações com alta taxa de conversão e arquitetura robusta (Python + Ollama/LLMs).",
+    tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
+    github: null,
     Visual: () => (
-      <div className="w-full h-full bg-black border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative group" data-cursor="GITHUB">
-        <h3 className="text-7xl md:text-9xl font-serif italic text-zinc-800 group-hover:text-zinc-600 transition-colors duration-700">Mikasa</h3>
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center p-8 overflow-hidden relative group" data-cursor="EXPLORE">
+        <img src="/allana.png" alt="Allana Bot" className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105" />
       </div>
     )
   },
