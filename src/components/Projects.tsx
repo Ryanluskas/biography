@@ -53,9 +53,11 @@ const projects = [
     tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
-      <div className="w-full h-full bg-black border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_#fff_0px,_transparent_1px)] bg-[size:32px_32px] group-hover:scale-110 transition-transform duration-1000" />
-        <h3 className="text-8xl md:text-9xl font-serif italic text-zinc-800 group-hover:text-white transition-colors duration-700 mix-blend-difference z-10 select-none">Mikasa</h3>
+      <div className="w-full h-full bg-[#EAE8E3] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#000_1px,_transparent_1px)] bg-[size:24px_24px] opacity-[0.03]" />
+        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center">
+           <img src="/mikasa-new.jpg" alt="Mikasa Project" className="w-full h-full object-contain rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-700 mix-blend-multiply" />
+        </div>
       </div>
     )
   },
@@ -67,10 +69,10 @@ const projects = [
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#080808] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-        <div className="w-full h-full p-12 md:p-24 flex items-center justify-center">
-           <img src="/allana.png" alt="Allana Bot" className="w-full h-full object-contain filter drop-shadow-[0_0_30px_rgba(16,185,129,0.1)] group-hover:drop-shadow-[0_0_50px_rgba(16,185,129,0.2)] group-hover:scale-105 transition-all duration-700" />
+      <div className="w-full h-full bg-[#1A111A] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <div className="absolute inset-0 bg-gradient-to-tr from-pink-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center z-10">
+           <img src="/allana-new.jpg" alt="Allana Bot" className="w-full h-full object-contain rounded-2xl shadow-2xl group-hover:scale-105 transition-all duration-700" />
         </div>
       </div>
     )
