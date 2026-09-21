@@ -12,36 +12,8 @@ const projects = [
     tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#030303] flex flex-col overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        {/* Abstract Dashboard UI */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#111_1px,transparent_1px),linear-gradient(to_bottom,#111_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
-        <div className="absolute top-0 w-full h-12 border-b border-zinc-900 bg-zinc-950/50 backdrop-blur-md flex items-center px-6 gap-2">
-           <div className="w-2 h-2 rounded-full bg-red-500/50" />
-           <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
-           <div className="w-2 h-2 rounded-full bg-green-500/50" />
-        </div>
-        <div className="flex-1 mt-12 p-8 flex flex-col gap-6 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out">
-          <div className="flex gap-4 w-full">
-            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
-               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
-               <div className="w-24 h-4 bg-zinc-700 rounded-full" />
-            </div>
-            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
-               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
-               <div className="w-20 h-4 bg-zinc-700 rounded-full" />
-            </div>
-            <div className="h-24 w-1/3 bg-zinc-900/40 rounded-lg border border-zinc-800/50 flex flex-col justify-end p-4">
-               <div className="w-12 h-2 bg-zinc-800 rounded-full mb-2" />
-               <div className="w-28 h-4 bg-zinc-700 rounded-full" />
-            </div>
-          </div>
-          <div className="flex-1 w-full bg-zinc-900/30 rounded-lg border border-zinc-800/50 relative overflow-hidden">
-             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-900/20 to-transparent" />
-             <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-               <path d="M0 100 C 20 80, 40 90, 60 50 C 80 10, 90 40, 100 0" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="2" />
-             </svg>
-          </div>
-        </div>
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <img src="/coresys-premium.jpg" alt="Coresys CRM" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   },
@@ -53,11 +25,8 @@ const projects = [
     tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
-      <div className="w-full h-full bg-[#EAE8E3] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#000_1px,_transparent_1px)] bg-[size:24px_24px] opacity-[0.03]" />
-        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center">
-           <img src="/mikasa-new.jpg" alt="Mikasa Project" className="w-full h-full object-contain rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-700 mix-blend-multiply" />
-        </div>
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
+        <img src="/mikasa-premium.jpg" alt="Mikasa Project" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105 grayscale-[50%] group-hover:grayscale-0" />
       </div>
     )
   },
@@ -69,11 +38,8 @@ const projects = [
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-[#1A111A] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-        <div className="absolute inset-0 bg-gradient-to-tr from-pink-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-        <div className="w-full h-full p-8 md:p-16 flex items-center justify-center z-10">
-           <img src="/allana-new.jpg" alt="Allana Bot" className="w-full h-full object-contain rounded-2xl shadow-2xl group-hover:scale-105 transition-all duration-700" />
-        </div>
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+        <img src="/allana-premium.jpg" alt="Allana Bot" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   },
@@ -85,14 +51,8 @@ const projects = [
     tech: ["REACT", "TAILWIND CSS", "FRAMER MOTION", "UX/UI"],
     github: null,
     Visual: () => (
-      <div className="w-full h-full bg-zinc-950 border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
-         {/* Premium Glow Effect */}
-         <div className="absolute w-full h-full flex items-center justify-center">
-            <div className="w-[150%] h-[150%] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(255,255,255,0.1)_360deg)] animate-[spin_10s_linear_infinite] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-         </div>
-         <div className="absolute inset-1 bg-zinc-950/90 backdrop-blur-3xl rounded-sm" />
-         
-         <img src="/vertice-logo.png" alt="Vértice Logo" className="w-48 h-48 md:w-64 md:h-64 object-contain z-10 mix-blend-screen opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+      <div className="w-full h-full bg-[#050505] border border-zinc-900 flex items-center justify-center overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
+         <img src="/vertice-premium.jpg" alt="Vértice Logo" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105" />
       </div>
     )
   }
