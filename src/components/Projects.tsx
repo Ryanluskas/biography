@@ -10,7 +10,7 @@ const projects = [
     subtitle: "CRM PLATFORM",
     desc: "Sistema completo de CRM desenvolvido para otimizar o relacionamento com o cliente e a gestão de processos internos. Conta com uma arquitetura moderna para alta escalabilidade e segurança de dados.",
     tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
-    github: null,
+    github: "https://coresys.vercel.app/",
     Visual: () => (
       <div className="w-full h-full bg-[#030303] flex flex-col overflow-hidden relative group cursor-pointer select-none" data-cursor="EXPLORE">
         {/* Modern SaaS CRM UI - Pure CSS */}
@@ -80,9 +80,9 @@ const projects = [
   {
     id: "02",
     title: "MIKASA",
-    subtitle: "OPEN SOURCE",
-    desc: "Projeto open-source focado em simplificar integrações e automações. Desenvolvido para a comunidade, prezando por uma arquitetura moderna, tipagem rigorosa e facilidade de extensão.",
-    tech: ["TYPESCRIPT", "NODE.JS", "GITHUB"],
+    subtitle: "LIFE MANAGEMENT SYSTEM",
+    desc: "Plataforma unificada para organização pessoal. Conecta finanças, treinos, estudos, trabalho e hábitos em um só lugar. Seu diferencial é a 'Camada de Vida', uma engine analítica que cruza dados para revelar padrões de comportamento e equilíbrio.",
+    tech: ["NEXT.JS", "NODE.JS", "PRISMA", "TYPESCRIPT"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
       <div className="w-full h-full bg-[#030303] flex items-center justify-center p-6 md:p-12 overflow-hidden relative group cursor-pointer" data-cursor="GITHUB">
@@ -129,7 +129,7 @@ const projects = [
     subtitle: "WHATSAPP AUTOMATION",
     desc: "Assistente virtual autônoma desenvolvida para WhatsApp. Realiza atendimento automatizado, qualificação de leads e gestão de simulações com alta taxa de conversão e arquitetura robusta (Python + Ollama/LLMs).",
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
-    github: null,
+    github: "https://github.com/Ryanluskas/whatsapp-simulacoes-bot",
     Visual: () => (
       <div className="w-full h-full bg-[#030303] flex items-center justify-center p-6 md:p-12 overflow-hidden relative group cursor-pointer" data-cursor="EXPLORE">
         {/* Mobile Phone Mockup / WhatsApp Interface */}
