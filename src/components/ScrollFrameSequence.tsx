@@ -251,8 +251,8 @@ export default function ScrollFrameSequence({ frameCount }: ScrollFrameSequenceP
             <span className="block font-medium text-white">RYAN</span>
             <span className="block font-serif italic text-zinc-300 md:pr-12 md:text-right">LUKAS.</span>
           </h1>
-          <p className="mt-8 md:mt-0 font-mono text-[10px] md:text-xs tracking-widest uppercase text-zinc-400">
-            Full Stack Developer / Product Builder
+          <p className="mt-8 md:mt-0 font-mono text-[10px] md:text-xs tracking-widest uppercase text-zinc-400 md:text-right md:pr-12 max-w-2xl md:ml-auto">
+            Software Engineer & Product Builder. Desenvolvendo ecossistemas escaláveis, interfaces minimalistas e automações reais.
           </p>
         </motion.div>
 

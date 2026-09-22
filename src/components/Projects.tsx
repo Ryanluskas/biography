@@ -8,7 +8,7 @@ const projects = [
     id: "01",
     title: "CORESYS",
     subtitle: "CRM PLATFORM",
-    desc: "Sistema completo de CRM desenvolvido para otimizar o relacionamento com o cliente e a gestão de processos internos. Conta com uma arquitetura moderna para alta escalabilidade e segurança de dados.",
+    desc: "CRM focado na gestão e otimização de funil de vendas. Desenvolvido para resolver gargalos operacionais no atendimento ao cliente, com pipeline interativo, controle de métricas e integração direta com backend relacional escalável.",
     tech: ["NEXT.JS", "NODE.JS", "TYPESCRIPT", "POSTGRESQL"],
     github: "https://coresys.vercel.app/",
     Visual: () => (
@@ -81,7 +81,7 @@ const projects = [
     id: "02",
     title: "MIKASA",
     subtitle: "LIFE MANAGEMENT SYSTEM",
-    desc: "Plataforma unificada para organização pessoal. Conecta finanças, treinos, estudos, trabalho e hábitos em um só lugar. Seu diferencial é a 'Camada de Vida', uma engine analítica que cruza dados para revelar padrões de comportamento e equilíbrio.",
+    desc: "Plataforma unificada de organização pessoal. Em vez de isolar dados, a 'Camada de Vida' (uma engine analítica customizada) cruza informações financeiras, treinos e rotina para expor padrões comportamentais reais.",
     tech: ["NEXT.JS", "NODE.JS", "PRISMA", "TYPESCRIPT"],
     github: "https://github.com/Ryanluskas/mikasa",
     Visual: () => (
@@ -127,7 +127,7 @@ const projects = [
     id: "03",
     title: "ALLANA BOT",
     subtitle: "WHATSAPP AUTOMATION",
-    desc: "Assistente virtual autônoma desenvolvida para WhatsApp. Realiza atendimento automatizado, qualificação de leads e gestão de simulações com alta taxa de conversão e arquitetura robusta (Python + Ollama/LLMs).",
+    desc: "Automação inteligente focada em conversão e pré-atendimento. Um bot assíncrono que realiza simulações complexas e qualificação de leads usando LLMs, reduzindo drasticamente o tempo de resposta no funil comercial.",
     tech: ["PYTHON", "WHATSAPP API", "LLM / OLLAMA", "PYTEST"],
     github: "https://github.com/Ryanluskas/whatsapp-simulacoes-bot",
     Visual: () => (
@@ -175,7 +175,7 @@ const projects = [
     id: "04",
     title: "VÉRTICE",
     subtitle: "WEB DESIGN & PRODUCTS",
-    desc: "Iniciativa de criação de sites para empresas e produtos digitais. Desenvolvimento de landing pages, design responsivo, experiência visual e integração direta com WhatsApp para sites comerciais.",
+    desc: "Produto focado na criação de interfaces de alta conversão. Entrega design brutalista, performance extrema e integração com WhatsApp para maximizar a captação de clientes para negócios digitais.",
     tech: ["REACT", "TAILWIND CSS", "FRAMER MOTION", "UX/UI"],
     github: null,
     Visual: () => (

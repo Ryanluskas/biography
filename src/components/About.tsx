@@ -25,26 +25,26 @@ export default function About() {
         </div>
 
         <div className="md:w-2/3 flex flex-col md:pt-32">
-           <div className="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1] mb-20 text-zinc-100">
-             Transforming complex ideas into <span className="font-serif italic text-zinc-500">scalable, high-performance</span> digital products.
+           <div className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight leading-[1.2] mb-20 text-zinc-100 max-w-2xl">
+             Engenharia de software focada na construção de produtos reais, escaláveis e com design intencional.
            </div>
 
-           <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 font-mono text-xs tracking-wide text-zinc-400 leading-loose">
+           <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16 font-mono text-xs tracking-wide text-zinc-400 leading-relaxed">
              <div className="border-t border-zinc-800 pt-6">
-               <div className="text-white mb-4">01 / FULL STACK</div>
-               Da modelagem de dados (PostgreSQL/Prisma) à interface do usuário (React/Next.js). Arquitetura robusta e escalável.
+               <div className="text-white mb-4">01 / ENGENHARIA FULL STACK</div>
+               Da arquitetura do banco de dados (PostgreSQL/Prisma) ao frontend (React/Next.js). Foco em performance, código limpo e sistemas robustos.
              </div>
              <div className="border-t border-zinc-800 pt-6">
-               <div className="text-white mb-4">02 / AUTOMATION & AI</div>
-               Ecossistemas autônomos. Integração prática de LLMs, processamento de filas e automação complexa no WhatsApp.
+               <div className="text-white mb-4">02 / AUTOMAÇÃO & IA</div>
+               Integração de LLMs (Ollama, Groq) em fluxos de negócios. Construção de ecossistemas autônomos, processamento em filas e bots complexos no WhatsApp.
              </div>
              <div className="border-t border-zinc-800 pt-6">
-               <div className="text-white mb-4">03 / WEB DESIGN</div>
-               Arquitetura visual, landing pages de alta conversão e UX/UI sob a marca Vértice.
+               <div className="text-white mb-4">03 / PRODUCT DESIGN</div>
+               Arquitetura visual brutalista e minimalista. Foco em interfaces que resolvem problemas reais (UX/UI), sem complexidade visual desnecessária.
              </div>
              <div className="border-t border-zinc-800 pt-6">
-               <div className="text-white mb-4">04 / FINANCE SYSTEMS</div>
-               Ferramentas operacionais e dashboards gerenciais, gerindo regras de negócio complexas (CapitalCred).
+               <div className="text-white mb-4">04 / LIFE MANAGEMENT</div>
+               Desenvolvimento de engines analíticas e plataformas de organização pessoal (Mikasa), processando grandes volumes de eventos para encontrar padrões.
              </div>
            </div>
         </div>
